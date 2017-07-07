@@ -1,0 +1,222 @@
+body, h1, h2, h3, h4, h5, h6, p {
+	font-family: 'Raleway';
+	margin: 0;
+}
+
+h1{
+	margin: 12px;
+}
+
+nav {
+	position: fixed;
+	top:0;
+	width: 100%;
+	z-index: 100;
+}
+
+.first {
+	border-bottom: 1px solid lightgrey;
+	background-color: white;
+}
+
+.wrapper {
+	margin: auto;
+	max-width: 1400px;
+}
+
+.navigation_content {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 20px;
+}
+
+
+.logo{
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.logo h1 {
+	font-weight: 400;
+	font-size: 20px;
+	padding: 0;
+}
+
+.logo a {
+	text-decoration: none;
+	color: black;
+}
+
+.person {
+	display: flex;
+	align-items: center;
+}
+
+.addition {
+	float: right;
+	display: flex;
+	align-items: center;
+}
+
+.addition a {
+	padding: 0 25px;
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+.second {
+	font-size: 12px;
+	line-height: 60px;
+	display: none;
+}
+
+
+
+
+.second a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: black;
+}
+
+.icon {
+	text-align: center;
+}
+
+.icon a{
+	padding: 0 25px;
+	font-weight: 200;
+}
+
+.featured_vids {
+	margin-top: 115px;
+
+}
+
+.date p{
+	font-size: 0.75em;
+	margin: 15px 0 20px;
+}
+
+.describ p {
+	font-size: 0.72em;
+}
+
+.main_sub {
+	display: grid;
+	grid-template-columns:1fr;
+	background-color: lavender;
+	margin: 20px 0;
+	grid-gap:10px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+.main_description,.sub_description {
+	text-align: center;
+}
+
+
+.main_1 img{
+	width: 100%;
+}
+
+.sub img {
+	width: 100%;
+}
+
+
+@media all and (min-width: 600px) {
+	.second {
+		display: inline;
+	}
+	.main_sub {
+		grid-template-columns:2fr 2fr;
+	}
+
+	.menu {
+		display: inline;
+		padding-right: 155px;	
+	}
+
+	.main_1 {
+		position: relative;
+	}
+
+	.sub {
+		position: relative;
+	}
+
+	.main_description,.sub_description {
+		position: absolute;
+		bottom: 40px;
+		margin: 0 auto;
+		left: 0;
+		right:0;
+		color: white;
+	}
+}
+
+section {
+	margin-top: 20px;
+	border-bottom: 1px solid goldenrod;
+}
+
+.featured_latest_container {
+	overflow: scroll;
+}
+
+.latest_slider {
+	display: grid;
+	grid-template-columns: repeat(6, 6fr);
+}
+
+.box {
+	width: 280px;
+	margin: 0 10px 20px 20px;
+	text-align: center;
+}
+
+.box img {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.membersplaylist_description h1, .membersplaylist_description a {	
+	color: white;
+}
+
+.membersplaylist_description h1 {
+	font-weight: 700;
+}
+
+.headline h2 {
+	text-align: center;
+	padding: 60px 0 60px 0;
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.membersplaylist_preview {
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.membersplaylist_preview img {
+	width: 100%;
+}
+
+.membersplaylist_description {
+	position: absolute;
+	top: 40px;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	color: white;
+	text-align: center;
+}
